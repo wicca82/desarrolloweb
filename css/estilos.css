@@ -1,0 +1,295 @@
+/*reglas
+selectores
+declaraciones
+propiedades
+valores */
+
+
+/* selector de etiqueta: header - section-article-nav */
+/* selector descendente : body header div nav ol li */
+/* selector de clase: se identifica con un punto .link */
+/* selector de id: se usa # : #portafolio */
+body{
+  font-family: 'Indie Flower', cursive;
+  background-color: #f5daf4;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Karma', serif;
+  font-weight: normal;
+}
+
+h1{
+  font-size: 30px;
+  line-height: 1.5em;
+  letter-spacing: -.2px;
+  text-transform: inherit;
+  text-decoration: dashed;
+  margin:0px;
+}
+h1.header-nombre{
+  display:flex;
+}
+.hero{
+  height: 300px;
+  /*background-image: url("../imagenes/principal.jpg");*/
+  /*background-size: 600px 300px;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position-x: right;*/
+  color:white ;
+  border: 10px solid purple;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+h1 strong{
+  color:#b526a4;
+}
+h2{
+  color:#b526a4;
+  text-transform: uppercase;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.proyecto{
+  border: 10px double;
+  border-color:purple;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: #f5daf4;
+  align-items: center;
+  justify-content:space-between;
+
+
+}
+.proyecto-descripcion{
+  font-size: 20px;
+  color: blueviolet;
+}
+
+
+.proyecto-titulo{
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-style: oblique;
+  color: blueviolet;
+  font-weight: bold;
+
+}
+
+.proyecto-detalles{
+  width: 500px;
+}
+
+.proyecto-imagencontainer{
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+.header{
+  background-color: #b042f5;
+  color: white;
+  border:5px solid purple;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display:flex;
+  justify-content: space-between;
+  padding: 10px;
+
+
+  }
+  .menu ol{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+.header ol {
+  display: flex;
+  text-align: center;
+}
+
+  ol,
+  li{
+      margin:0;
+      padding: 0 10px;
+      list-style: none;
+  }
+
+.header h1{
+height: inherit;
+margin-right: auto;
+
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+
+
+
+}
+
+
+  figure{
+    margin:0;
+  }
+
+}
+
+.header a {
+  color:white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer{
+  background-color: #b042f5;
+  margin:1px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+.footer img{
+  vertical-align: middle;
+}
+
+.evento-url{
+  color: blueviolet;
+  border:1px solid ;
+  padding: 5px 20px;
+  margin-bottom: 70px;
+  border-radius: 5px;
+}
+
+.portafolio{
+  background:
+  padding: 10px;
+}
+.evento-imagencontainer{
+  display: flex;
+  align-items: center;
+}
+.evento-imagenaprendizaje{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:5px solid;
+  border-radius: 5px;
+  border-color: purple;
+  padding: 10px;
+}
+.event-lista{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.evento{
+  border: 1px solid purple;
+  margin:10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: auto;
+  background-color: #b042f5;
+  justify-content: center;
+
+
+
+}
+.evento-imagen{
+width: 480px;
+height: 200px;
+object-fit: cover;
+
+}
+.evento-detalle{
+ border:5px solid;
+ border-radius: 5px;
+ margin:20px 40px;
+ margin-top: -20px;
+ background-color: white;
+ font-family: 'Indie Flower';
+ color: #ab0384;
+ position: relative;
+ padding: 20px;
+ text-align: left;
+
+
+}
+
+
+.evento-titulo{
+  font-family: 'Indie Flower', cursive;
+  color: #ab0384;
+  text-decoration: underline;
+  font-weight: bold;
+
+}
+
+.contacto{
+  background-color: purple;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+.social{
+
+}
+.social-link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+
+}
+.social-link.twitter{
+  background-image:url("../imagenes/twitter.png");
+  background-size: 50px 50px;
+
+}
+.social-link.github{
+  background-image:url("../imagenes/github.png");
+  background-size: 50px 50px;
+}
+
+.formulario-email input{
+  border-color: white;
+  border-radius: 5px;
+  padding: 5px 20px 5px 25px;
+
+}
+
+.container{
+  border:1px solid red;
+  margin:0 auto;
+  width: 1000px;
+  display: inherit;
+  justify-content: inherit;
+  height: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
+
+}
