@@ -32,9 +32,13 @@ h1{
   text-transform: inherit;
   text-decoration: dashed;
   margin:0px;
+  background: blue;
+  z-index: 2;
+
 }
 h1.header-nombre{
   display:flex;
+  background: none;
 }
 .hero{
   height: 300px;
@@ -49,8 +53,19 @@ h1.header-nombre{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
 
 
+}
+.hero-imagen{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 h1 strong{
   color:#b526a4;
@@ -94,16 +109,21 @@ h2{
 }
 
 .proyecto-detalles{
-  width: 500px;
+  width: 50%;
 }
 
 .proyecto-imagencontainer{
-  width: 500px;
+  width: 50%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
+.proyecto-imagencontainer img{
+  max-width: 100%;
+
+}
 .header{
+
   background-color: #b042f5;
   color: white;
   border:5px solid purple;
@@ -213,7 +233,7 @@ a{
 
 .evento{
   border: 1px solid purple;
-  margin:10px;
+  margin:1%;
   width: 480px;
   flex-shrink: 0;
   border-radius: 10px;
@@ -292,9 +312,10 @@ object-fit: cover;
 }
 
 .container{
-  border:1px solid red;
+  max-width: 1000px;
+  flex:1;
   margin:0 auto;
-  width: 1000px;
+  /*width: 1000px;*/
   display: inherit;
   justify-content: inherit;
   height: inherit;
@@ -304,17 +325,136 @@ object-fit: cover;
 }
 
 @media screen and (max-width:1024px){
+  .container{
+    padding: 0 1em;
+  }
+  .contacto{
+    padding: 0 1em;
+  }
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+
+
+  }
+  .hero-imagen{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+  }
+
+    h1{
+      font-size: 2em;
+      z-index: 2;
+      background: blue;
+    }
+
 
 }
 
-@media screen and (max-width:768px){
-  body{
-    border:10px solid green;
+@media screen and (max-width:767px){
+
+
+  .header{
+    display: block;
+    height: auto;
   }
+  .header ol{
+    display: block;
+
+
+  }
+  .header ol li{
+    height: 50px;
+
+  }
+  .header a{
+    justify-content: center;
+
+  }
+  .header .logo{
+    text-align: left;
+  }
+  .header .header-nombre{
+    display: block;
+    text-align: center;
+  }
+  .proyecto{
+    display: block;
+    margin: 1em;
+    text-align: center;
+  }
+  .proyecto-imagencontainer{
+    width: auto;
+    text-align: center;
+    display: block;
+  }
+  .proyecto-detalles{
+     width: auto;
+    font-size: 16px;
+
+  }
+  .proyecto-titulo{
+    font-size: 1.5em;
+
+  }
+  .proyecto-url{
+    font-size: 1em;
+
+  }
+  .proyecto-descripcion{
+    font-size: 1em;
+  }
+  .evento{
+    width: 70%;
+    flex-shrink: initial;
+  }
+  .evento-imagen{
+    width: 100%;
+  }
+  .evento-imagencontainer{
+    width: 100%;
+  }
+  .evento-detalle{
+
+    margin:-2em .5em .5em;
+    padding: 1em;
+  }
+  .evento-imagenaprendizaje{
+    align-items: center;
+  }
+
+
 }
 
 
 @media screen and (max-width:480px){
+  h1{
+    font-size: 1em;
+    height: auto;
+  }
+  .contacto{
+    height: auto;
+    padding: 1em;
+    text-align: center;
+    display: block;
+
+  }
+  .footer{
+    display: block;
+    text-align: center;
+
+  }
+  .social-link{
+    border: 1px;
+  }
 
 }
 
